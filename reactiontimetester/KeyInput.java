@@ -17,7 +17,7 @@ public class KeyInput extends KeyAdapter{
 		
 		int key = e.getKeyCode();
 		
-		if(key == KeyEvent.VK_F){
+		if(key == KeyEvent.VK_F && main.started){
 			
 			if(main.is1On)
 				main.is1On = false;
@@ -30,7 +30,7 @@ public class KeyInput extends KeyAdapter{
 			
 		}
 		
-		if(key == KeyEvent.VK_J){
+		if(key == KeyEvent.VK_J && main.started){
 			
 			if(main.is2On)
 				main.is2On = false;
@@ -50,4 +50,5 @@ public class KeyInput extends KeyAdapter{
 		
 	}
 	
+
 }
